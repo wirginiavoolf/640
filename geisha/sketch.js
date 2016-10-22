@@ -5,6 +5,18 @@ var fourthLine = ["rosy", "light", "in", "the", "wreckage", "with", "sugar"]
 var fifthLine = ["blood", "wounds", "puccinis", "curdled", "fingers", "fucking", "sinew",]
 var sixthLine = ["split", "her", "bedroom", "curtained", "shy", "flickering", "ready"]
 
+/*nested array
+var allLines = [["he", "asked", "the", "butterfly", "whats", "her", "cocoon"],
+ ["wanted", "what", "operas", "sing", "no", "colony", "only"],
+ ["her", "soft", "larvae", "like", "patience", "but", "blushing"],
+ ["rosy", "light", "in", "the", "wreckage", "with", "sugar"],
+ ["blood", "wounds", "puccinis", "curdled", "fingers", "fucking", "sinew",],
+ ["split", "her", "bedroom", "curtained", "shy", "flickering", "ready"]]
+
+allLines[0]
+
+allLines[0][0]
+*/
 var slider;
 
 
