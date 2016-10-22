@@ -8,61 +8,80 @@ var sixthLine = ["split", "her", "bedroom", "curtained", "shy", "flickering", "r
 var slider;
 
 
-var PosX = 20;
-var PosY = 20;
+
+var PosX = 10;
+var PosY = 460;
 
 function setup() {
-  createCanvas(400, 400);
-  frameRate(10);
+  createCanvas(1000, 1000);
   
   
-  firstSlide = createSlider(0, 7, 0);
+  firstSlide = createSlider(0, 6, 0);
   firstSlide.position(PosX, PosY);
   
-  secondSlide = createSlider(0, 7, 0);
-  secondSlide.position(20, PosY + 30);
   
-  thirdSlide = createSlider(0, 7, 0);
-  thirdSlide.position(PosX, PosY + 60);
+  secondSlide = createSlider(0, 6, 0);
+  secondSlide.position(PosX + 140, PosY);
   
-  fourthSlide = createSlider(0, 7, 0);
-  fourthSlide.position(PosX, PosY + 90);
+  thirdSlide = createSlider(0, 6, 0);
+  thirdSlide.position(PosX + 280, PosY);
   
-  fifthSlide = createSlider(0, 7, 0);
-  fifthSlide.position(PosX, PosY + 120);
+  fourthSlide = createSlider(0, 6, 0);
+  fourthSlide.position(PosX + 420, PosY);
   
-  sixthSlide = createSlider(0, 7, 0);
-  sixthSlide.position(PosX, PosY + 150);
+  fifthSlide = createSlider(0, 6, 0);
+  fifthSlide.position(PosX + 560, PosY);
+  
+  sixthSlide = createSlider(0, 6, 0);
+  sixthSlide.position(PosX + 700, PosY);
 }
 
-/*
-function mousePressed() {
-    createP(firstLine);
+
+function flipOverArray (firstsliderValue,firstLine) {
+  if(firstsliderValue >= firstLine.length){
+    firstsliderValue = firstsliderValue - firstLine.length
+  }
+  return firstsliderValue
 }
-*/
+
+//forloop
 
 function draw() {
-  background(50);
-  fill(255);
-  textSize(14);
-  
+  background(255);
+  fill(0);
+  textSize(24);
+  textFont("Times New Roman");
   
   var firstsliderValue = int(firstSlide.value());
-  text(firstLine[firstsliderValue], 0, 20);
   
+  index_0 = flipOverArray(firstsliderValue + 0,firstLine)
+  text(firstLine[index_0], 0, 80);
+  
+  index_1 = flipOverArray(firstsliderValue + 1,firstLine)
+  text(firstLine[index_1], 100, 80);  
+  
+  // text(firstLine[flipOverArray(firstsliderValue + 1,firstLine)], 100, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 2,firstLine)], 200, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 3,firstLine)], 300, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 4,firstLine)], 400, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 5,firstLine)], 500, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 6,firstLine)], 600, 80);
+  
+  /*
   var secondsliderValue = int(secondSlide.value());
-  text(secondLine[secondsliderValue], 0, 40);
+  text(secondLine[secondsliderValue], 20, 140);
 
   var sliderValue = int(thirdSlide.value());
-  text(thirdLine[sliderValue], 0, 60);
+  text(thirdLine[sliderValue], 20, 200);
   
   var sliderValue = int(fourthSlide.value());
-  text(fourthLine[sliderValue], 0, 80);
+  text(fourthLine[sliderValue], 20, 260);
   
   var sliderValue = int(fifthSlide.value());
-  text(fifthLine[sliderValue], 0, 110);
+  text(fifthLine[sliderValue], 20, 320);
   
   var sliderValue = int(sixthSlide.value());
-  text(sixthLine[sliderValue], 0, 130);
+  text(sixthLine[sliderValue], 20, 380);
+*/
 
 }
