@@ -17,7 +17,7 @@ allLines[0]
 
 allLines[0][0]
 */
-var slider;
+var slider; 
 
 
 
@@ -102,87 +102,87 @@ function draw() {
   var firstsliderValue = int(firstSlide.value());
   
   index_0 = flipOverArray(firstsliderValue + 0,firstLine)
-  text(firstLine[index_0], 0, 80);
+  text(firstLine[index_0], 10, 80);
   
   index_1 = flipOverArray(firstsliderValue + 1,firstLine)
-  text(firstLine[index_1], 100, 80);  
-  text(firstLine[flipOverArray(firstsliderValue + 2,firstLine)], 200, 80);
-  text(firstLine[flipOverArray(firstsliderValue + 3,firstLine)], 300, 80);
-  text(firstLine[flipOverArray(firstsliderValue + 4,firstLine)], 400, 80);
-  text(firstLine[flipOverArray(firstsliderValue + 5,firstLine)], 500, 80);
-  text(firstLine[flipOverArray(firstsliderValue + 6,firstLine)], 600, 80);
+  text(firstLine[index_1], 110, 80);  
+  text(firstLine[flipOverArray(firstsliderValue + 2,firstLine)], 210, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 3,firstLine)], 310, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 4,firstLine)], 410, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 5,firstLine)], 510, 80);
+  text(firstLine[flipOverArray(firstsliderValue + 6,firstLine)], 610, 80);
   
   //second line
   var secondsliderValue = int(secondSlide.value());
 
   
   index_0 = flipOverArrayii(secondsliderValue + 0,secondLine)
-  text(secondLine[index_0], 0, 180);
+  text(secondLine[index_0], 10, 180);
   
   index_1 = flipOverArrayii(secondsliderValue + 1,secondLine)
-  text(secondLine[index_1], 100, 180);  
-  text(secondLine[flipOverArrayii(secondsliderValue + 2,secondLine)], 200, 180);
-  text(secondLine[flipOverArrayii(secondsliderValue + 3,secondLine)], 300, 180);
-  text(secondLine[flipOverArrayii(secondsliderValue + 4,secondLine)], 400, 180);
-  text(secondLine[flipOverArrayii(secondsliderValue + 5,secondLine)], 500, 180);
-  text(secondLine[flipOverArrayii(secondsliderValue + 6,secondLine)], 600, 180);
+  text(secondLine[index_1], 110, 180);  
+  text(secondLine[flipOverArrayii(secondsliderValue + 2,secondLine)], 210, 180);
+  text(secondLine[flipOverArrayii(secondsliderValue + 3,secondLine)], 310, 180);
+  text(secondLine[flipOverArrayii(secondsliderValue + 4,secondLine)], 410, 180);
+  text(secondLine[flipOverArrayii(secondsliderValue + 5,secondLine)], 510, 180);
+  text(secondLine[flipOverArrayii(secondsliderValue + 6,secondLine)], 610, 180);
 
   //third line
   var thirdsliderValue = int(thirdSlide.value());
 
   index_0 = flipOverArrayiii(thirdsliderValue + 0,thirdLine)
-  text(thirdLine[index_0], 0, 280);
+  text(thirdLine[index_0], 10, 280);
   
   index_1 = flipOverArrayiii(thirdsliderValue + 1,thirdLine)
-  text(thirdLine[index_1], 100, 280);  
-  text(thirdLine[flipOverArrayiii(thirdsliderValue + 2,thirdLine)], 200, 280);
-  text(thirdLine[flipOverArrayiii(thirdsliderValue + 3,thirdLine)], 300, 280);
-  text(thirdLine[flipOverArrayiii(thirdsliderValue + 4,thirdLine)], 400, 280);
-  text(thirdLine[flipOverArrayiii(thirdsliderValue + 5,thirdLine)], 500, 280);
-  text(thirdLine[flipOverArrayiii(thirdsliderValue + 6,thirdLine)], 600, 280);
+  text(thirdLine[index_1], 110, 280);  
+  text(thirdLine[flipOverArrayiii(thirdsliderValue + 2,thirdLine)], 210, 280);
+  text(thirdLine[flipOverArrayiii(thirdsliderValue + 3,thirdLine)], 310, 280);
+  text(thirdLine[flipOverArrayiii(thirdsliderValue + 4,thirdLine)], 410, 280);
+  text(thirdLine[flipOverArrayiii(thirdsliderValue + 5,thirdLine)], 510, 280);
+  text(thirdLine[flipOverArrayiii(thirdsliderValue + 6,thirdLine)], 610, 280);
   
   //fourth line
   var fourthsliderValue = int(fourthSlide.value());
 
   index_0 = flipOverArrayiv(fourthsliderValue + 0,fourthLine)
-  text(fourthLine[index_0], 0, 380);
+  text(fourthLine[index_0], 10, 380);
   
   index_1 = flipOverArrayiv(fourthsliderValue + 1,fourthLine)
-  text(fourthLine[index_1], 100, 380);  
-  text(fourthLine[flipOverArrayiv(fourthsliderValue + 2,fourthLine)], 200, 380);
-  text(fourthLine[flipOverArrayiv(fourthsliderValue + 3,fourthLine)], 300, 380);
-  text(fourthLine[flipOverArrayiv(fourthsliderValue + 4,fourthLine)], 400, 380);
-  text(fourthLine[flipOverArrayiv(fourthsliderValue + 5,fourthLine)], 500, 380);
-  text(fourthLine[flipOverArrayiv(fourthsliderValue + 6,fourthLine)], 600, 380);
+  text(fourthLine[index_1], 110, 380);  
+  text(fourthLine[flipOverArrayiv(fourthsliderValue + 2,fourthLine)], 210, 380);
+  text(fourthLine[flipOverArrayiv(fourthsliderValue + 3,fourthLine)], 310, 380);
+  text(fourthLine[flipOverArrayiv(fourthsliderValue + 4,fourthLine)], 410, 380);
+  text(fourthLine[flipOverArrayiv(fourthsliderValue + 5,fourthLine)], 510, 380);
+  text(fourthLine[flipOverArrayiv(fourthsliderValue + 6,fourthLine)], 610, 380);
   
   
   //fifth line 
     var fifthsliderValue = int(fifthSlide.value());
 
   index_0 = flipOverArrayiv(fifthsliderValue + 0,fifthLine)
-  text(fifthLine[index_0], 0, 480);
+  text(fifthLine[index_0], 10, 480);
   
   index_1 = flipOverArrayiv(fifthsliderValue + 1,fifthLine)
-  text(fifthLine[index_1], 100, 480);  
-  text(fifthLine[flipOverArrayiv(fifthsliderValue + 2,fifthLine)], 200, 480);
-  text(fifthLine[flipOverArrayiv(fifthsliderValue + 3,fifthLine)], 300, 480);
-  text(fifthLine[flipOverArrayiv(fifthsliderValue + 4,fifthLine)], 400, 480);
-  text(fifthLine[flipOverArrayiv(fifthsliderValue + 5,fifthLine)], 500, 480);
-  text(fifthLine[flipOverArrayiv(fifthsliderValue + 6,fifthLine)], 600, 480);
+  text(fifthLine[index_1], 110, 480);  
+  text(fifthLine[flipOverArrayiv(fifthsliderValue + 2,fifthLine)], 210, 480);
+  text(fifthLine[flipOverArrayiv(fifthsliderValue + 3,fifthLine)], 310, 480);
+  text(fifthLine[flipOverArrayiv(fifthsliderValue + 4,fifthLine)], 410, 480);
+  text(fifthLine[flipOverArrayiv(fifthsliderValue + 5,fifthLine)], 510, 480);
+  text(fifthLine[flipOverArrayiv(fifthsliderValue + 6,fifthLine)], 610, 480);
   
   //sixth line
   var sixthsliderValue = int(sixthSlide.value());
 
   index_0 = flipOverArrayiv(sixthsliderValue + 0,sixthLine)
-  text(sixthLine[index_0], 0, 580);
+  text(sixthLine[index_0], 10, 580);
   
   index_1 = flipOverArrayiv(sixthsliderValue + 1,sixthLine)
-  text(sixthLine[index_1], 100, 580);  
-  text(sixthLine[flipOverArrayiv(sixthsliderValue + 2,sixthLine)], 200, 580);
-  text(sixthLine[flipOverArrayiv(sixthsliderValue + 3,sixthLine)], 300, 580);
-  text(sixthLine[flipOverArrayiv(sixthsliderValue + 4,sixthLine)], 400, 580);
-  text(sixthLine[flipOverArrayiv(sixthsliderValue + 5,sixthLine)], 500, 580);
-  text(sixthLine[flipOverArrayiv(sixthsliderValue + 6,sixthLine)], 600, 580);
+  text(sixthLine[index_1], 110, 580);  
+  text(sixthLine[flipOverArrayiv(sixthsliderValue + 2,sixthLine)], 210, 580);
+  text(sixthLine[flipOverArrayiv(sixthsliderValue + 3,sixthLine)], 310, 580);
+  text(sixthLine[flipOverArrayiv(sixthsliderValue + 4,sixthLine)], 410, 580);
+  text(sixthLine[flipOverArrayiv(sixthsliderValue + 5,sixthLine)], 510, 580);
+  text(sixthLine[flipOverArrayiv(sixthsliderValue + 6,sixthLine)], 610, 580);
 
 
 }
