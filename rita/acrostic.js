@@ -1,6 +1,8 @@
 var input;
 var button;
 var lexicon;
+var rg;
+
 
 function setup() {
   noCanvas();
@@ -11,6 +13,9 @@ function setup() {
   input.changed(processRita);
   button.mousePressed(processRita);
   input.size(200);
+  
+  rg = new RiGrammar();
+
 }
 
 function processRita() {
@@ -23,12 +28,13 @@ console.log(pos);
 
 var output = '';
 for (var i = 0; i < words.length; i++) { 
-  if (pos[i] === 'nn') {
-    output += lexicon.random('nn');
-  }else {
-  output += words[i];
-}
-output += " ";
-createP(output);
-}
+   if (/nn.*/.test(pos[i])) {
+      output += lexicon.randomWord(pos[i]);
+    } else {
+      output += words[i];
+    }
+
+    output += " ";
+  }
+  createP(output);
 }

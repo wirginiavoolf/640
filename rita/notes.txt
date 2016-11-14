@@ -1,0 +1,8 @@
+examples -- 
+
+save image
+tracking 
+ -pixel change (loads/scans image) 
+ -- moves through a pixel array using a nested for loop
+ -webcam 
+ --capture + loadpixels 
