@@ -6,11 +6,11 @@ function setup() {
   noCanvas();
   lexicon = new RiLexicon();
 
-  input = createInput('Not knowing when the dawn will come, I open every door.');
+  input = createInput('It was a dark and stormy night.');
   button = createButton('submit');
   input.changed(processRita);
   button.mousePressed(processRita);
-  input.size(400);
+  input.size(200);
 }
 
 function processRita() {

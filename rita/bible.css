@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,700i|Roboto:300,400');
+body {
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	background-color: #F7E3D5;
+}
+
+#bg {
+	display: none;
+	/* small text in bg */
+	/* color: #CFE8A1;
+	height: calc(100% + 200px);
+	width: calc(100% + 200px);
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	font-family: "Gotham", "Helvetica", "Futura", sans-serif;
+	font-weight: 800;
+	opacity: .5;
+	line-height: 1.2;
+	*/
+}
+
+.text {
+	position: relative;
+	max-width: 760px;
+	margin: auto;
+	margin-top: 50px;
+	box-sizing: border-box;
+	padding: 36px;
+	/* text job */
+	font-size: 32px;
+	font-family: "Merriweather";
+	font-weight: 400;
+	/* colouring */
+	color: #4f4f4f;
+	background-color: #FBF6EE;
+	/* bordering */
+	border-radius: 12px;
+	/* shadowing */
+	box-shadow: 0 10px 15px -10px rgba(0,0,0,.25);
+}
+
+.legend {
+	position: relative;
+	max-width: 760px;
+	margin: auto;
+	margin-top: 30px;
+	z-index: 2;
+	/*text job*/
+	font-family: "Roboto";
+	width: 100%;
+	text-align: center;
+	/* colouring */
+	color: #E29B68;
+}
