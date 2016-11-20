@@ -5,12 +5,12 @@ var lexicon;
 function setup() {
   noCanvas();
   lexicon = new RiLexicon();
-  
-  input = createInput('It was a dark and stormy night.');
+
+  input = createInput('Not knowing when the dawn will come, I open every door.');
   button = createButton('submit');
   input.changed(processRita);
   button.mousePressed(processRita);
-  input.size(200);
+  input.size(400);
 }
 
 function processRita() {
@@ -24,7 +24,8 @@ console.log(pos);
 var output = '';
 for (var i = 0; i < words.length; i++) { 
    if (/nn.*/.test(pos[i])) {
-      output += lexicon.randomWord(pos[i]);
+      var alliterations = lexicon.alliterations(words[i]);
+      output += alliterations[Math.floor(Math.random() * alliterations.length)];
     } else {
       output += words[i];
     }
