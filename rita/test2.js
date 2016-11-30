@@ -4,6 +4,7 @@ var verse;
 var sentence = [];
 var special = [];
 var lexicon;
+var alliterations;
 
 function myVerse(d){
 		verse = "Not knowing when the dawn will come";
@@ -44,7 +45,6 @@ function changeWord(i) {
 
 	//var newWord = lexicon.randomWord(role["0"]);
 	var newWord = lexicon.alliterations[Math.floor(Math.random() * alliterations.length)];
-	console.log(lexicon.randomWord)
 	
 	this.html(newWord);
 	//console.log(this);
