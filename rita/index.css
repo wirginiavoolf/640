@@ -1,0 +1,59 @@
+body{
+  color:black; 
+  font-style:normal; 
+  font-weight:normal; 
+  font-size:14pt; 
+  font-family:garamond; 
+  line-height:14pt;
+  letter-spacing:; 
+  text-align:justify
+}
+
+body{
+background-color: #918b61;
+background-image: url(asfalt-light.png);
+}
+
+
+h1{
+  text-transform:uppercase; 
+  color:black; 
+  font-style:normal; 
+  font-weight:bold; 
+  font-size:24pt; 
+  font-family:garamond; 
+  line-height:20pt;
+}
+
+#about{text-align: justify;
+width:450px;}
+
+a.gert:link{color: black;}
+a.gert:visited{color: black;}
+
+#all { padding: 50px; }
+
+#gertrude {
+  position: relative;
+  width: 400px;
+  height: 406px;
+
+  background-image: url(basket2.png);
+  padding: 5px;
+
+}
+
+#frame{
+    position: absolute;
+    left: -25;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: auto;
+
+    width:500px;
+    height: 500px; 
+  }
+

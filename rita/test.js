@@ -18,7 +18,7 @@ function setup() {
   button1 = createButton('rhyme');
   //button = createButton('also submit');
   button1.mousePressed(processRhyme);
-  button1.position(posX + 400, posY);
+  button1.position(posX + 401, posY);
 
   button2 = createButton('reason');
   //button = createButton('also submit');
@@ -47,7 +47,7 @@ var output = '';
 //rhymes
 for (var i = 0; i < words.length; i++) { 
 
-  if(words[i] == "." || words[i] == ","){
+  if(words[i] == "." || words[i] == "," || words[i] == "?" || words[i] == "!"){
     output += words[i];
   }else{
     output += " ";
@@ -76,13 +76,6 @@ for (var i = 0; i < words.length; i++) {
 
 }
 
-  // if(i != words.length-2){
-  //     output += " ";
-  //    // console.log(words[i]);
-  // }
- 
-      
-      // output += " ";
   
   }
   createP(output);
@@ -100,75 +93,39 @@ console.log(pos);
 var output = '';
 
 //alliterations
-
 for (var i = 0; i < words.length; i++) { 
+
+  if(words[i] == "." || words[i] == "," || words[i] == "?" || words[i] == "!"){
+    output += words[i];
+  }else{
+    output += " ";
    if (/nn.*/.test(pos[i])) {
       var alliterations = lexicon.alliterations(words[i]);
       if(alliterations.length == 0){
         output+=words[i];
-      
       }else{
-         output += alliterations[Math.floor(Math.random() * alliterations.length)]; 
-         // output += " ";
+         output += alliterations[Math.floor(Math.random() * alliterations.length)];
       }
       //console.log("noun");
       //console.log(alliterations.length);
     } else if (/jj.*/.test(pos[i])) {
       var alliterations = lexicon.alliterations(words[i]);
-      output += alliterations[Math.floor(Math.random() * alliterations.length)]; 
-      // output += " ";
+      output += alliterations[Math.floor(Math.random() * alliterations.length)];
       //console.log("adjective");
     } else if (/vb/.test(pos[i])) {
       var alliterations = lexicon.alliterations(words[i]);
-      output += alliterations[Math.floor(Math.random() * alliterations.length)]; 
-      // output += " ";
+      output += alliterations[Math.floor(Math.random() * alliterations.length)];
       //console.log("verbs");
     } 
-
-    // else if (/in.*/) {
-    //   output+=words[i];
-    //   output += " ";
-    // }
-    // else if (/prp.*/) {
-    //   output+=words[i];
-    //   output += " ";
-    // }
     else {
       //console.log(words[i]);
-      output += words[i] + " ";
-   } 
+      output += words[i];
+  }
+
+}
+
+  
   }
   createP(output);
 
 }
-
-
-
-
-/*
-var output = '';
-for (var i = 0; i < words.length; i++) { 
-   if (/nn./.test(pos[i])) {
-      var alliterations = lexicon.alliterations(words[i]);
-      output += alliterations[Math.floor(Math.random() * alliterations.length)];
-    } else {
-      output += words[i];
-    }
-
-    output += " ";
-  }
-
-
-
-for (var i = 0; i < words.length; i++) { 
-   if (/jj./.test(pos[i])) {
-      var alliterations = lexicon.alliterations(words[i]);
-      output += alliterations[Math.floor(Math.random() * alliterations.length)];
-    } else {
-      output += words[i];
-    }
-
-    output += " ";
-  }
-  createP(output);
-}*/
